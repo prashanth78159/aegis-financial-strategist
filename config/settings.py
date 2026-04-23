@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GOOGLE_API_KEY = os.getenv("AIzaSyBg60yNywN3i2RgoNr8FLa7JPEg5Eg1ulc")
-TAVILY_API_KEY = os.getenv("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")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
-# IMPORTANT: Local disk (writable)
+# ✅ MUST be local disk in Colab
 CHROMA_DIR = "/content/chroma_afs"
 RAW_DATA_DIR = "data/raw"
